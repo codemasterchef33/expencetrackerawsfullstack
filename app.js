@@ -67,7 +67,7 @@ ForgotPassward.belongsTo(User);
 User.hasMany(Filedownloaded);
 Filedownloaded.belongsTo(User);
 
-const port = 3000;
+const port = process.env.PORT;
 
 sequelize
   // .sync({force : true})
