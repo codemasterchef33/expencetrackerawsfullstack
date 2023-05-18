@@ -51,7 +51,7 @@ exports.forgetPassward = async (req, res, next) => {
 
             apiInstance.sendTransacEmail(sendSmtpEmail).then((data) => {
                 console.log("okkkk ------------------------->", data);
-                return res.json({ message: 'Link to reset password sent to your mail ', sucess: true })
+                return res.status(202).json({ message: 'Link to reset password sent to your mail ', sucess: true })
             }).catch((error) => {
                 console.log(error);
                 return res.json({ message: error, sucess: false });
