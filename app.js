@@ -52,6 +52,11 @@ app.use('/premium', premiumRouter);
 
 app.use('/passward' , passwardRouter);
 
+app.use((req,res)=>{
+  console.log('urll',req.url)
+  res.sendFile(path.join(__dirname,`frontend/${req.url}`));
+})
+
 app.use(errorController.get404);
 
 

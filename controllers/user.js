@@ -1,7 +1,9 @@
 const User = require('../models/user');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+
 const AWS = require('aws-sdk');
+require("aws-sdk/lib/maintenance_mode_message").suppress = true;
 require('dotenv').config();
 
 
