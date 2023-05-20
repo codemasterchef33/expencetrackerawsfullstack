@@ -1,6 +1,6 @@
 let form = document.getElementById('my-form');
 const list = document.getElementById('lists');
-const backendApis = `http://16.16.160.192:3000`;
+const backendApis = `http://13.50.228.36:3000`;
 const massage = document.querySelector('.msg');
 const token = localStorage.getItem("token");
 const rzrPay = document.querySelector('#rzr-pay');
@@ -221,7 +221,7 @@ function showUserName(name) {
 
 async function downloadExpence() {
     try {
-        const response = await axios.get('http://16.16.160.192:3000/user/download', { headers: { "Authorization": token } });
+        const response = await axios.get('http://13.50.228.36::3000/user/download', { headers: { "Authorization": token } });
         if (response.status === 200) {
             console.log(response);
             let a = document.createElement("a");

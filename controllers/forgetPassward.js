@@ -42,7 +42,7 @@ exports.forgetPassward = async (req, res, next) => {
                 <h1>Hello!</h1>
                 <p>This is a sample HTML email.</p>
                 <p>Here's a list:</p>
-                <a href="http://16.16.160.192:3000/passward/resetpassward/${id}">Reset password</a>
+                <a href="http://13.50.228.36:3000/passward/resetpassward/${id}">Reset password</a>
             </body>
             </html>`;
            
