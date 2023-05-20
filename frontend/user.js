@@ -1,6 +1,6 @@
 let form = document.getElementById('my-form');
 let massage = document.querySelector('.msg');
-const backendApis = `http://16.16.195.63:3000/user`;
+const backendApis = `http://16.16.160.192:3000/user`;
 
 form.addEventListener('click', (e) => {
     e.preventDefault();
